@@ -41,23 +41,37 @@
     .quote-rotator span:nth-child(9) { animation-delay: 32s; }
     .quote-rotator span:nth-child(10) { animation-delay: 36s; }
 
-    /* Partner Slider */
-    .partner-slider {
-      display: flex;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      height: 100px;
-    }
-    .partner-track {
+  /* Partner Slider */
+.partner-slider {
   display: flex;
-  width: calc(250%);
-  animation: scroll 14s linear infinite;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100px;
 }
 
-.partner-slider:hover .partner-track {
-  animation-play-state: paused;
+.partner-track {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 12s linear infinite;
 }
+
+.partner-track img {
+  width: 150px;
+  margin: 0 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.partner-track img:hover {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 
     }
     .partner-track img {
@@ -210,5 +224,6 @@
 </body>
 
 </html>
+
 
 
