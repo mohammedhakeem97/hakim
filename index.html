@@ -42,6 +42,7 @@
     .quote-rotator span:nth-child(10) { animation-delay: 36s; }
 
    /* Partner Slider */
+/* Partner Slider */
 .partner-slider {
   overflow: hidden;
   position: relative;
@@ -58,8 +59,8 @@
 }
 
 .partner-track img {
-  width: 150px;
-  margin: 0 20px;
+  width: 120px;        /* ← الحجم الأصغر زي الأول */
+  margin: 0 18px;      /* ← مسافة متوازنة بين اللوجوهات */
   opacity: 0.8;
   flex-shrink: 0;
   transition: opacity 0.3s;
@@ -80,9 +81,11 @@
 
 @media (max-width: 768px) {
   .partner-track img {
-    width: 120px;
-    margin: 0 15px;
+    width: 90px;      /* ← حجم مناسب جدًا للموبايل */
+    margin: 0 12px;
   }
+}
+
 }
 
   </style>
@@ -222,4 +225,5 @@
 </body>
 
 </html>
+
 
