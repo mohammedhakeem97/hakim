@@ -41,26 +41,27 @@
     .quote-rotator span:nth-child(9) { animation-delay: 32s; }
     .quote-rotator span:nth-child(10) { animation-delay: 36s; }
 
-  /* Partner Slider */
-.partner-slider {
-  display: flex;
+ .partner-slider {
   overflow: hidden;
+  white-space: nowrap;
   position: relative;
   width: 100%;
   height: 100px;
 }
 
 .partner-track {
-  display: flex;
-  width: calc(200%);
-  animation: scroll 12s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 14s linear infinite;
 }
 
 .partner-track img {
   width: 150px;
+  height: auto;
   margin: 0 20px;
-  opacity: 0.8;
-  transition: opacity 0.3s;
+  display: inline-block;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
 }
 
 .partner-track img:hover {
@@ -68,8 +69,20 @@
 }
 
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .partner-track img {
+    width: 120px;
+    margin: 0 15px;
+  }
 }
 
 
@@ -224,6 +237,7 @@
 </body>
 
 </html>
+
 
 
 
