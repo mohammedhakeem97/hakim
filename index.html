@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Mohamed Hakim | Medical Marketing Consultant</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .quote-rotator {
+      position: relative;
+      height: 3rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .quote-rotator span {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      text-align: center;
+      animation: fade 40s infinite;
+      transition: opacity 0.6s ease-in-out;
+    }
+    @keyframes fade {
+      0% { opacity: 0; transform: translateY(10px); }
+      2.5% { opacity: 1; transform: translateY(0); }
+      10% { opacity: 1; transform: translateY(0); }
+      12.5% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 0; }
+    }
+    .quote-rotator span:nth-child(1) { animation-delay: 0s; }
+    .quote-rotator span:nth-child(2) { animation-delay: 4s; }
+    .quote-rotator span:nth-child(3) { animation-delay: 8s; }
+    .quote-rotator span:nth-child(4) { animation-delay: 12s; }
+    .quote-rotator span:nth-child(5) { animation-delay: 16s; }
+    .quote-rotator span:nth-child(6) { animation-delay: 20s; }
+    .quote-rotator span:nth-child(7) { animation-delay: 24s; }
+    .quote-rotator span:nth-child(8) { animation-delay: 28s; }
+    .quote-rotator span:nth-child(9) { animation-delay: 32s; }
+    .quote-rotator span:nth-child(10) { animation-delay: 36s; }
+
+    /* Partner Slider */
+    .partner-slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100px;
+    }
+    .partner-track {
+      display: flex;
+      width: calc(200%);
+      animation: scroll 20s linear infinite;
+    }
+    .partner-track img {
+      width: 150px;
+      margin: 0 20px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    .partner-track img:hover {
+      opacity: 1;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-20 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Grow Your Medical Practice with Expert Marketing Consultation</h1>
+      <p class="text-lg text-gray-600 mb-6">I help doctors and clinics refine their marketing strategies, overcome challenges, and achieve consistent growth — through expert guidance and supervision, not execution.</p>
+      <a href="https://wa.me/201282400616" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Book Your Consultation</a>
+      <p class="mt-4 text-sm text-gray-500">Strategic insight for sustainable medical marketing success.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 bg-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">I’m Dr. Mohamed Hakim — A Doctor with 8+ Years of Proven Marketing Experience</h2>
+      <p class="text-gray-600 mb-6 leading-relaxed">As a medical doctor and digital marketing consultant, I bring over eight years of hands-on experience in marketing for clinics, medical centers, and hospitals. Throughout my career, I’ve successfully guided healthcare brands to grow, attract the right patients, and build a sustainable presence in competitive markets.</p>
+      <p class="text-gray-600 mb-6 leading-relaxed">My deep understanding of both medicine and marketing allows me to identify the real challenges doctors face — from patient communication to brand perception — and provide practical, ethical solutions that actually work. I don’t run campaigns myself; I help you and your team understand what works, how to execute it right, and how to track measurable success.</p>
+      <div class="quote-rotator text-blue-700 font-medium italic">
+        <span>“The best marketing results come from clarity, not complexity.”</span>
+        <span>“Marketing is about understanding people, not just promoting services.”</span>
+        <span>“Smart strategy beats big budgets every single time.”</span>
+        <span>“Trust is the strongest marketing currency in healthcare.”</span>
+        <span>“Your brand story should educate before it sells.”</span>
+        <span>“Data tells you what’s happening — strategy tells you why.”</span>
+        <span>“Authenticity builds loyalty faster than any ad campaign.”</span>
+        <span>“Ethical marketing isn’t just right — it’s effective.”</span>
+        <span>“Great marketing translates expertise into empathy.”</span>
+        <span>“Consistency turns awareness into trust.”</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Partners Section -->
+  <section class="bg-gray-50 py-16 px-6 text-center">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10">Success Partners</h2>
+      <p class="text-gray-600 mb-10">Trusted by leading clinics, medical centers, and healthcare professionals who have achieved measurable success through tailored marketing consultation.</p>
+      <div class="partner-slider">
+        <div class="partner-track">
+          <img src="SP/p1.png" alt="Partner Logo 1">
+          <img src="SP/p2.png" alt="Partner Logo 2">
+          <img src="SP/p3.png" alt="Partner Logo 3">
+          <img src="SP/p4.png" alt="Partner Logo 4">
+          <img src="SP/p5.png" alt="Partner Logo 5">
+          <img src="SP/p6.png" alt="Partner Logo 6">
+          <img src="SP/p7.png" alt="Partner Logo 7">
+          <img src="SP/p8.png" alt="Partner Logo 8">
+          <img src="SP/p9.png" alt="Partner Logo 9">
+          <!-- duplicate for infinite scroll -->
+          <img src="SP/p1.png" alt="Partner Logo 1">
+          <img src="SP/p2.png" alt="Partner Logo 2">
+          <img src="SP/p3.png" alt="Partner Logo 3">
+          <img src="SP/p4.png" alt="Partner Logo 4">
+          <img src="SP/p5.png" alt="Partner Logo 5">
+          <img src="SP/p6.png" alt="Partner Logo 6">
+          <img src="SP/p7.png" alt="Partner Logo 7">
+          <img src="SP/p8.png" alt="Partner Logo 8">
+          <img src="SP/p9.png" alt="Partner Logo 9">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-gray-50 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Consultation Areas</h2>
+      <p class="text-gray-600 mb-10">I advise doctors and clinics on every key area of marketing — offering tailored insights, plans, and supervision for effective execution by their teams or agencies.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Brand Strategy & Identity</h3>
+          <p class="text-gray-600">Consultation on how to position your clinic as a trusted, recognizable brand with a clear message and consistent visual identity.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Social Media Management</h3>
+          <p class="text-gray-600">Guidance on planning, auditing, and optimizing your social media strategy for better engagement and patient trust.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Patient Acquisition Campaigns</h3>
+          <p class="text-gray-600">Consulting on how to attract, target, and retain the right patients through ethical, data-driven campaigns.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Website & Landing Page Optimization</h3>
+          <p class="text-gray-600">Advising on structure, content, and conversion improvements that turn visitors into real bookings.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Medical Copywriting</h3>
+          <p class="text-gray-600">Helping you refine your message so it’s both compliant and compelling — making patients feel informed and confident.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof Section -->
+  <section class="py-16 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Proven Expertise in Medical Marketing</h2>
+      <p class="text-gray-600 mb-10">I’ve guided clinics across multiple specialties — from cosmetic and dental to oncology and dermatology — providing consulting that transforms confusion into clarity, and strategies into results. Each plan is rooted in data, ethics, and deep understanding of both medicine and marketing.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-blue-50 rounded-lg p-6 shadow">
+          <p class="font-bold text-2xl text-blue-700">+60%</p>
+          <p class="text-gray-600">Average improvement in marketing efficiency after consultation</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-6 shadow">
+          <p class="font-bold text-2xl text-blue-700">100+</p>
+          <p class="text-gray-600">Consultations delivered for medical professionals</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-6 shadow">
+          <p class="font-bold text-2xl text-blue-700">15+</p>
+          <p class="text-gray-600">Specialties advised and supported</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Section -->
+  <section id="consultation" class="bg-blue-600 py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Ready to See Your Marketing More Clearly?</h2>
+      <p class="text-blue-100 mb-8">In a one-on-one consultation, we’ll analyze your clinic’s current marketing, identify challenges, and outline a clear action plan. You’ll leave with direction, not confusion — and a roadmap you or your team can implement with confidence.</p>
+      <a href="https://wa.me/201282400616" target="_blank" class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">Book Your Consultation Now</a>
+      <p class="mt-4 text-sm text-blue-200">No vague advice — only structured, practical guidance for growth.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    <p>© 2025 Dr. Mohamed Hakim — Medical Marketing Consultant</p>
+    <p class="mt-2 text-gray-500">Insightful • Ethical • Strategic</p>
+  </footer>
+
+</body>
+</html>
